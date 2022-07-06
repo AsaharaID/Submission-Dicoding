@@ -1,0 +1,230 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: rgb(143,64,246);
+    background: linear-gradient(90deg, rgba(143,64,246,1) 35%, rgba(239,8,231,1) 100%);
+    font-family: 'Plus Jakarta Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.wrapper .container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: none;
+    text-align: center;
+}
+
+.form {
+    font-weight: Bold;
+}
+
+.item {
+    border: none;
+    margin-top: 16px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 400px;
+    border: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+input[type=text],
+input[type=date] {
+    font-family: 'Plus Jakarta Display', sans-serif;
+    background: transparent;
+    border: none;
+    padding: 16px;
+    box-sizing: border-box;
+    border-bottom: 3px solid white;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: fit-content;
+    border: none;
+    font-family: 'Plus Jakarta Display', sans-serif;
+    border-radius: 30px;
+    background-color: white;
+    padding: 10px 24px;
+    color: black;
+    font-size: 22px;
+    align-self: flex-end;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    background: #EF08E7;
+    color: white;
+}
+::-webkit-calendar-picker-indicator {
+     filter: invert(1);
+ }
+
+input[type=text],
+input[type=date],
+.btn-submit:focus{
+    outline: none;
+}
+
+
+
+.text-center {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.form-title {
+    font-weight: bold;
+    color: white;
+    margin: auto 0;
+}
+
+.check-button {
+    background:url("../assets/V-icon.png");
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+.check-button:hover {
+    background: url('../assets/V-icon – hover.png');
+    background-size: contain;
+}
+
+.trash-button{
+    background:url("../assets/X-icon.png");
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+.trash-button:hover {
+    background: url("../assets/X-icon – hover.png");
+    background-size: contain;
+}
+
+.undo-button{
+    background:url("../assets/Undo-icon.png");
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+}
+
+.undo-button:hover {
+    background:url("../assets/Undo-icon – Hover.png");
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+.containerList{
+    max-width: 800px;
+    width: 80%;
+    padding: 16px;
+    margin: 16px 0 0 0;
+    border: none;
+}
+
+.wrapper .containerList h2{
+    color: white;
+    text-decoration: underline;
+}
+
+.list-item{
+    color: white;
+    border-bottom: 4px solid white;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
